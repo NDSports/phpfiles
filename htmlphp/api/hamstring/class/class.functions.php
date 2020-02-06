@@ -1064,7 +1064,7 @@ class Functions
 					if($currentKey!='last_updated_ts')
 						$this->db->where($currentKey,$data[$currentKey]);
 					else
-						$this->db->where('fModifiedTs',$data[$currentKey],'>=');
+						$this->db->where('fModifiedTs',$data[$currentKey],'>');
 				}
 			}
 			
